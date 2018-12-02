@@ -150,11 +150,8 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "north_static_cdn","media_r
 
 
 #SMTP MAIL configuration:
-EMAIL_HOST='smtp.gmail.com'
-EMAIL_PORT=587
-EMAIL_HOST_USER=''
-EMAIL_HOST_PASSWORD=''
-EMAIL_USE_TLS=True
 
+
+AUTH_USER_MODEL = 'accounts.NorthUser'
 
 #AUTH_USER_MODEL  = 'accounts.MyUser' # this changes bulit in user model

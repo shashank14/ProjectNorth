@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block head %}
+{{block.super}} | Signup Form
+ {% endblock %}
+{% block content %}
+<h1>Logout</h1>
+<form class="" action="" method="post">
+  {% csrf_token %}
+  {{form.as_p}}
+  <input type="submit" name="" value="Register">
+</form>
+{% endblock %}
